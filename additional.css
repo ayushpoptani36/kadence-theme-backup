@@ -1,0 +1,164 @@
+@media (min-width: 769px) {
+  #filter-toggle {
+    display: none !important;
+  }
+}
+
+.filter-sorting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 20px;
+}
+
+.filter-sorting-header .filter-toggle {
+  background: transparent; /* or your theme color */
+  color: #0d3b66;
+  border: 1px solid #0d3b66;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+	
+	
+	#filter-toggle i {
+  margin-right: 6px;
+}
+  #filter-toggle {
+    display: inline-block;
+     background: ; 
+    color: #fff;
+    border: none;
+    padding: 8px 120px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+
+	#secondary.active {
+  margin-top: 0 !important;   /* remove blank top */
+  top: 0 !important;          /* stick from top */
+  padding-top: 20px !important; /* keep spacing inside */
+}
+
+	
+  #secondary {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    overflow-y: auto;
+    transition: left 0.3s ease-in-out;
+    padding: 20px;
+    box-shadow: 2px 0 6px rgba(0,0,0,0.3);
+  }
+
+  #secondary.active {
+    left: 0;
+  }
+
+  #filter-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 9998;
+  }
+
+  #filter-overlay.active {
+    display: block;
+  }
+}
+
+
+/* Wrapper around result count + sorting */
+.woocommerce-result-count,
+.woocommerce-ordering {
+  width: 100%;
+}
+
+/* Make sure filter button is centered */
+#filter-toggle {
+  display: block;
+  margin: 0 auto 10px auto; /* center button above sorting */
+}
+
+
+
+#secondary {
+    margin-top: 60px !important;
+    padding-top: 0 !important;
+}
+
+#wpfBlock_1 > div.wpfFilterContent > div.wfpDescription{
+	margin-left:-10px
+}
+
+/* Make sidebar filter smaller */
+.sidebar-inner-wrap,
+.sidebar-inner-wrap * {
+    font-size: 14px !important;   /* smaller font */
+    line-height: 1.2 !important;
+}
+
+/* Reduce padding and margins */
+.sidebar-inner-wrap .widget,
+.sidebar-inner-wrap .widget li,
+.sidebar-inner-wrap .widget label {
+    padding: 2px 0px  !important;
+    margin: 0px 0 !important;
+}
+
+/* Make buttons smaller */
+.sidebar-inner-wrap button,
+.sidebar-inner-wrap input[type="submit"],
+.sidebar-inner-wrap .button {
+    font-size: 14px !important;
+    padding: 4px 8px !important;
+    height: 35px !important;
+}
+
+/* Make checkboxes smaller */
+.sidebar-inner-wrap input[type="checkbox"] {
+    width: 14px !important;
+    height: 14px !important;
+}
+
+/* Hide scrollbar */
+.sidebar-inner-wrap {
+    overflow-y: scroll;
+scrollbar-width: none; /* Firefox */
+}
+
+.sidebar-inner-wrap::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+    max-height: none !important;     /* ensures full section visible */
+}
+
+/* Move sidebar higher */
+
+
+/* Remove extra offset added by sticky sidebar */
+.sidebar-inner-wrap {
+    top: 0 !important;
+    margin-top: 0 !important;
+}
+
+
+
+
+
+
+
